@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentGradingSystemController">
+   <children>
+      <Button fx:id="getMarksButton" layoutX="65.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGetMarksButtonClicked" text="GetMarks" textFill="#056513" />
+      <Button fx:id="getAverageButton" layoutX="226.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGetAverageButtonClicked" text="GetAverage" textFill="#04330b" />
+      <Button fx:id="getCGPAButton" layoutX="148.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGetCGPAButtonClicked" text="GetCGPA" textFill="#063a1e" />
+      <TextField fx:id="rollNumberField" layoutX="391.0" layoutY="126.0" />
+      <TextField fx:id="gradeField1" layoutX="391.0" layoutY="169.0" />
+      <TextField fx:id="gradeField2" layoutX="391.0" layoutY="210.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="gradeField3" layoutX="391.0" layoutY="251.0" />
+      <TextField fx:id="gradeField4" layoutX="391.0" layoutY="292.0" />
+      <TextField fx:id="gradeField5" layoutX="391.0" layoutY="337.0" />
+      <TextField fx:id="gradeField6" layoutX="391.0" layoutY="378.0" />
+      <TextField fx:id="gradeField7" layoutX="391.0" layoutY="420.0" />
+      <TextField fx:id="gradeField8" layoutX="391.0" layoutY="462.0" />
+      <TextField fx:id="gradeField9" layoutX="391.0" layoutY="502.0" />
+      <Button fx:id="saveButton" layoutX="391.0" layoutY="582.0" mnemonicParsing="false" onAction="#onSaveButtonClicked" text="Save" textFill="#04480a" />
+      <Button fx:id="clearButton" layoutX="664.0" layoutY="582.0" mnemonicParsing="false" onAction="#onClearButtonClicked" prefHeight="25.0" prefWidth="49.0" text="Clear" textFill="#0a4e06" />
+      <TextField fx:id="creditPointField1" layoutX="574.0" layoutY="169.0" />
+      <TextField fx:id="creditPointField2" layoutX="574.0" layoutY="210.0" />
+      <TextField fx:id="creditPointField3" layoutX="574.0" layoutY="251.0" />
+      <TextField fx:id="creditPointField4" layoutX="574.0" layoutY="292.0" />
+      <TextField fx:id="creditPointField5" layoutX="574.0" layoutY="337.0" />
+      <TextField fx:id="creditPointField6" layoutX="574.0" layoutY="378.0" />
+      <TextField fx:id="creditPointField7" layoutX="574.0" layoutY="420.0" />
+      <TextField fx:id="creditPointField8" layoutX="574.0" layoutY="462.0" />
+      <TextField fx:id="creditPointField9" layoutX="574.0" layoutY="502.0" />
+     
+      
+      <Button fx:id="selectFileButton" layoutX="476.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSelectFileButtonClicked" text="select a file" textFill="#064807">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Button>
+      <TextField fx:id="selectedFileTextField" layoutX="565.0" layoutY="14.0" onAction="#updateSelectedFileTextField" />
+      <Button fx:id="showListButton" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" onAction="#onShowListButtonClicked" text="ShowList" textFill="#04512a" />
+      <ListView fx:id="studentListView" layoutX="765.0" layoutY="117.0" prefHeight="407.0" prefWidth="194.0" />
+      <TextField fx:id="numberOfStudentsTextField" layoutX="565.0" layoutY="58.0" onAction="#updateSelectedFileTextField" />
+      <Button fx:id="clearGradesButton" layoutX="508.0" layoutY="582.0" mnemonicParsing="false" onAction="#onClearGradesButtonClicked" text="Clear Grades" textFill="#075515" />
+      <Label layoutX="289.0" layoutY="130.0" text="RollNumber :" textFill="#3a0be5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="310.0" layoutY="173.0" text="Subject1 :" textFill="#282626">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="214.0" text="Subject2 :" textFill="#312e2e">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="255.0" text="Subject3 :" textFill="#514a4a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="296.0" text="Subject4 :" textFill="#222121">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="341.0" text="Subject5 :" textFill="#1f1d1d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="382.0" text=" Subject6 :" textFill="#2b2929">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="424.0" text=" Subject7 :" textFill="#221d1d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="466.0" text="Subject8 :" textFill="#383333">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="506.0" text="Subject9 :" textFill="#2d2727">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <VBox fx:id="gradeAndCreditPointFields" layoutX="2.0" layoutY="65.0" prefHeight="480.0" prefWidth="212.0" />
+   </children>
+</AnchorPane>

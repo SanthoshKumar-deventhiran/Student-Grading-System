@@ -1,7 +1,9 @@
 # Student-Grading-System
-The Student Grading System is a desktop application designed to simplify the process of calculating, managing, and storing student grades. Built in Java, this application provides an efficient, user-friendly interface for educators, students, and administrators. It allows users to input student scores, calculate grades based on customizable criteria, and view results in a well-organized format.
+The Student Grading System is a desktop application designed to simplify the process of calculating, managing, and storing student grades. Built in Java, this application provides an efficient, user-friendly interface for educators, students, and administrators. 
+It allows users to input student scores, calculate grades based on customizable criteria, and view results in a well-organized format.
 
 ## Features
+
  Grade Calculation: Quickly calculates grades based on user-defined parameters.
  Data Management: Allows saving, editing, and organizing student records.
  Customizable Grade Criteria: Supports customization of grading standards and scoring rules.

@@ -30,8 +30,3 @@ Once installed, launch the application from the Start menu or desktop shortcut.
 #### Multi-Platform Support: Extend compatibility for Linux and macOS.
 #### Advanced Analytics: Provide detailed performance analysis reports.
 #### Database Integration: Store grades and records in an external database for more robust data management.
-## License
-This project is licensed under the MIT License.
-
-## Contributing
-Feel free to open issues or submit pull requests for improvements or bug fixes. All contributions are welcome!
